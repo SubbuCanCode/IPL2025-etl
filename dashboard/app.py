@@ -49,6 +49,14 @@ if 'data_loaded' not in st.session_state:
     st.session_state.data_loaded = False
 if 'analyzer' not in st.session_state:
     st.session_state.analyzer = None
+if 'team_kpis' not in st.session_state:
+    st.session_state.team_kpis = None
+if 'player_kpis' not in st.session_state:
+    st.session_state.player_kpis = None
+if 'venues_df' not in st.session_state:
+    st.session_state.venues_df = pd.DataFrame()
+if 'model_trained' not in st.session_state:
+    st.session_state.model_trained = False
 
 def load_data():
     """Load data and initialize analyzer"""
@@ -91,8 +99,8 @@ def create_team_performance_chart(team_kpis):
         rows=2, cols=3,
         subplot_titles=('Win Rate', 'Average Run Rate', 'Wickets Taken'),
         specs=[
-            [{"type": "bar"}] * 3,  # Row 1: 3 bars
-            [{"type": "bar"}] * 3   # Row 2: 3 bars
+            [{"type": "bar"} for _ in range(3)],  # Row 1: 3 bars
+            [{"type": "bar"} for _ in range(3)]   # Row 2: 3 bars
         ]
     )
     
