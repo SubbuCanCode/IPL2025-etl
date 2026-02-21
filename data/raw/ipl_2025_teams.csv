@@ -1,0 +1,11 @@
+team,matches_played,wins,losses,no_result,points,net_run_rate,wins_batting_first,wins_chasing,highest_team_score,lowest_team_score,avg_first_innings_score,avg_second_innings_score,total_runs_scored,total_wickets_lost,total_sixes,total_fours,powerplay_runs_avg,death_overs_runs_avg,captain,coach,title_wins
+Kolkata Knight Riders,16,12,4,0,24,0.892,6,6,245/4,128/10,186.5,178.3,2964,138,168,298,52.4,68.2,Shreyas Iyer,Chandrakant Pandit,3
+Rajasthan Royals,16,11,5,0,22,0.678,5,6,238/3,142/9,184.2,176.8,2912,142,172,302,54.1,66.8,Sanju Samson,Kumar Sangakkara,2
+Chennai Super Kings,14,10,4,0,20,0.542,6,4,232/5,136/10,182.6,174.2,2556,128,148,276,51.2,64.5,MS Dhoni,Stephen Fleming,5
+Mumbai Indians,16,10,6,0,20,0.398,4,6,228/6,124/10,180.4,178.6,2886,146,184,268,49.8,70.4,Rohit Sharma,Mark Boucher,5
+Sunrisers Hyderabad,15,9,6,0,18,0.456,5,4,242/3,118/10,188.4,172.8,2826,136,196,254,56.2,72.6,Pat Cummins,Daniel Vettori,2
+Gujarat Titans,16,8,8,0,16,0.124,4,4,234/4,138/9,181.8,176.4,2868,148,162,286,52.8,65.8,Shubman Gill,Ashish Nehra,2
+Delhi Capitals,14,7,7,0,14,-0.156,3,4,226/5,132/10,178.4,172.6,2464,132,142,264,50.4,62.8,Rishabh Pant,Ricky Ponting,1
+Lucknow Super Giants,15,7,8,0,14,-0.234,4,3,224/4,128/10,176.8,174.2,2652,142,158,258,48.6,64.2,KL Rahul,Justin Langer,0
+Royal Challengers Bangalore,15,6,9,0,12,-0.412,2,4,218/5,112/10,174.2,170.8,2613,148,154,268,47.8,60.4,Faf du Plessis,Andy Flower,0
+Punjab Kings,13,4,9,0,8,-0.892,2,2,212/6,98/10,168.4,165.2,2189,126,136,242,46.2,58.6,Shikhar Dhawan,Trevor Bayliss,1

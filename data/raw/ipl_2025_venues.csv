@@ -1,0 +1,11 @@
+venue,city,matches_hosted,avg_first_innings_score,avg_second_innings_score,highest_score,lowest_score,total_sixes,total_fours,toss_win_match_win,bat_first_wins,chase_wins,avg_attendance,pitch_type,boundary_size_meters
+Wankhede Stadium,Mumbai,8,182.4,176.8,228/6,124/10,78,128,5,3,5,32000,Batting-friendly,65
+M. Chinnaswamy Stadium,Bangalore,8,178.2,172.4,218/5,112/10,72,136,4,2,6,38000,Batting-friendly,70
+Eden Gardens,Kolkata,8,188.6,180.2,245/4,128/10,84,142,6,4,4,65000,Balanced,75
+Narendra Modi Stadium,Ahmedabad,7,186.4,178.6,242/3,138/9,82,134,4,3,4,118000,Balanced,80
+MA Chidambaram Stadium,Chennai,8,176.8,170.4,232/5,136/10,64,148,5,6,2,40000,Spin-friendly,68
+Rajiv Gandhi International Stadium,Hyderabad,8,192.4,176.2,242/3,118/10,92,126,5,5,3,35000,Batting-friendly,72
+Sawai Mansingh Stadium,Jaipur,8,182.6,174.8,238/3,142/9,76,138,4,4,4,30000,Batting-friendly,68
+Arun Jaitley Stadium,Delhi,8,174.2,168.4,226/5,132/10,68,132,3,3,5,28000,Balanced,65
+Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,6,178.4,172.6,224/4,128/10,64,122,3,3,3,48000,Balanced,70
+Punjab Cricket Association Stadium,Mohali,7,172.6,166.8,212/6,98/10,58,118,2,2,5,26000,Pace-friendly,72

@@ -57,20 +57,22 @@ def load_data():
         analyzer = IPLKPIAnalyzer()
         
         # Load data
-        matches_df, deliveries_df, players_df, points_df = analyzer.load_data()
+        matches_df, deliveries_df, players_df, points_df, venues_df = analyzer.load_data()
         
         if matches_df is not None:
             st.session_state.matches_df = matches_df
             st.session_state.deliveries_df = deliveries_df
             st.session_state.players_df = players_df
             st.session_state.points_df = points_df
+            st.session_state.venues_df = venues_df
             st.session_state.analyzer = analyzer
             st.session_state.data_loaded = True
             
             # Generate KPI report
-            report = analyzer.generate_kpi_report(matches_df, deliveries_df, players_df)
+            report = analyzer.generate_kpi_report(matches_df, deliveries_df, players_df, venues_df)
             st.session_state.team_kpis = report['team_kpis']
             st.session_state.player_kpis = report['player_kpis']
+            st.session_state.venues_df = report.get('venues_df', pd.DataFrame())
             st.session_state.model_trained = report['model_trained']
             
             return True
@@ -213,6 +215,8 @@ def main():
     st.sidebar.metric("⚾ Total Deliveries", len(st.session_state.deliveries_df))
     st.sidebar.metric("👥 Total Players", len(st.session_state.players_df))
     st.sidebar.metric("🏆 Total Teams", len(st.session_state.points_df))
+    if not st.session_state.venues_df.empty:
+        st.sidebar.metric("🏟 Total Venues", len(st.session_state.venues_df))
     
     if page == "📊 Overview":
         st.markdown("## 📊 IPL 2025 Season Overview")
@@ -406,23 +410,68 @@ def main():
         if analysis_type == "Venue Performance":
             st.markdown("### 🏟 Venue Performance Analysis")
             
-            venue_stats = st.session_state.matches_df.groupby('venue').agg({
-                'id': 'count',
-                'win_by_runs': lambda x: (x > 0).sum(),
-                'win_by_wickets': lambda x: (x > 0).sum()
-            }).rename(columns={'id': 'matches'})
-            
-            venue_stats['avg_runs'] = st.session_state.matches_df.groupby('venue')['win_by_runs'].mean()
-            
-            fig = px.bar(
-                venue_stats.reset_index(), 
-                x='venue', y='matches',
-                title="Matches per Venue",
-                labels={'matches': 'Number of Matches', 'venue': 'Venue'}
-            )
-            st.plotly_chart(fig, use_container_width=True)
-            
-            st.dataframe(venue_stats.reset_index(), use_container_width=True)
+            if not st.session_state.venues_df.empty:
+                venue_stats = st.session_state.venues_df
+                
+                # Display venue statistics
+                col1, col2 = st.columns(2)
+                
+                with col1:
+                    st.metric("🏟 Total Venues", len(venue_stats))
+                    st.metric("📊 Avg Capacity", f"{venue_stats['capacity'].mean():,.0f}" if 'capacity' in venue_stats.columns else "N/A")
+                
+                with col2:
+                    # Venue selection
+                    selected_venue = st.selectbox(
+                        "Select Venue",
+                        options=venue_stats['name'].tolist() if 'name' in venue_stats.columns else [],
+                        index=0
+                    )
+                    
+                    if selected_venue and 'name' in venue_stats.columns:
+                        venue_info = venue_stats[venue_stats['name'] == selected_venue].iloc[0] if not venue_stats[venue_stats['name'] == selected_venue].empty else None
+                        
+                        if venue_info is not None:
+                            st.markdown(f"### 📍 {selected_venue}")
+                            
+                            col2a, col2b = st.columns(2)
+                            with col2a:
+                                st.metric("🏟 City", venue_info.get('city', 'N/A'))
+                                st.metric("👥 Capacity", f"{venue_info.get('capacity', 'N/A'):,}")
+                                st.metric("⏰ Timezone", venue_info.get('timezone', 'N/A'))
+                            
+                            with col2b:
+                                # Show matches at this venue
+                                venue_matches = st.session_state.matches_df[
+                                    st.session_state.matches_df['venue'] == selected_venue
+                                ]
+                                st.metric("📅 Matches Hosted", len(venue_matches))
+                                
+                                # Show teams with most wins at this venue
+                                if not venue_matches.empty:
+                                    venue_winners = venue_matches['winner'].value_counts()
+                                    if len(venue_winners) > 0:
+                                        st.metric("🏆 Most Successful", f"{venue_winners.index[0]} ({venue_winners.iloc[0]} wins)")
+                                
+                                st.dataframe(
+                                    venue_matches[['date', 'team1', 'team2', 'winner', 'player_of_match']],
+                                    use_container_width=True
+                                )
+                
+                # Venue distribution chart
+                if 'name' in venue_stats.columns:
+                    fig = px.bar(
+                        venue_stats, 
+                        x='name', 
+                        y='capacity' if 'capacity' in venue_stats.columns else len(venue_stats),
+                        title="Matches per Venue",
+                        labels={'name': 'Venue Name', 'capacity': 'Matches Hosted' if 'capacity' not in venue_stats.columns else 'Total Matches'}
+                    )
+                    st.plotly_chart(fig, use_container_width=True)
+                    
+                    st.dataframe(venue_stats, use_container_width=True)
+            else:
+                st.info("📍 No venues data available. Please ensure ipl_2025_venues.csv is loaded.")
         
         elif analysis_type == "Toss Impact":
             st.markdown("### 🪙 Toss Impact Analysis")

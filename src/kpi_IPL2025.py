@@ -42,10 +42,17 @@ class IPLKPIAnalyzer:
             players_df = pd.read_sql_query("SELECT * FROM players", self.conn)
             points_df = pd.read_sql_query("SELECT * FROM points_table", self.conn)
             
+            # Also load venues data if available
+            try:
+                venues_df = pd.read_sql_query("SELECT * FROM venues", self.conn)
+                logger.info(f"Loaded venues: {len(venues_df)} records")
+            except:
+                venues_df = pd.DataFrame()  # Empty DataFrame if venues table doesn't exist
+            
             logger.info(f"Loaded data: {len(matches_df)} matches, {len(deliveries_df)} deliveries, "
                        f"{len(players_df)} players, {len(points_df)} points records")
             
-            return matches_df, deliveries_df, players_df, points_df
+            return matches_df, deliveries_df, players_df, points_df, venues_df
             
         except Exception as e:
             logger.error(f"Error loading data: {e}")
@@ -314,7 +321,7 @@ class IPLKPIAnalyzer:
             logger.error(f"Error making prediction: {e}")
             return None
     
-    def generate_kpi_report(self, matches_df, deliveries_df, players_df):
+    def generate_kpi_report(self, matches_df, deliveries_df, players_df, venues_df=None):
         """Generate comprehensive KPI report"""
         if not all([matches_df is not None, deliveries_df is not None, players_df is not None]):
             logger.error("Missing required data for KPI report")
@@ -333,6 +340,7 @@ class IPLKPIAnalyzer:
         report = {
             'team_kpis': team_kpis,
             'player_kpis': player_kpis,
+            'venues_df': venues_df,
             'model_trained': model_success,
             'total_matches': len(matches_df),
             'total_deliveries': len(deliveries_df),
@@ -397,14 +405,14 @@ def main():
     analyzer = IPLKPIAnalyzer()
     
     # Load data
-    matches_df, deliveries_df, players_df, points_df = analyzer.load_data()
+    matches_df, deliveries_df, players_df, points_df, venues_df = analyzer.load_data()
     
     if matches_df is None:
-        print("❌ Failed to load data. Please run the ETL pipeline first.")
+        print("❌ Failed to load data. Please run ETL pipeline first.")
         return
     
     # Generate KPI report
-    report = analyzer.generate_kpi_report(matches_df, deliveries_df, players_df)
+    report = analyzer.generate_kpi_report(matches_df, deliveries_df, players_df, venues_df)
     
     if report:
         print("✅ KPI Analysis completed successfully!")

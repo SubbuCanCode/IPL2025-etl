@@ -1,0 +1,75 @@
+match_id,date,venue,city,team1,team2,toss_winner,toss_decision,winner,win_type,win_margin,player_of_match,umpire1,umpire2,attendance,match_type
+1,2025-03-22,Wankhede Stadium,Mumbai,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,Mumbai Indians,runs,25,Rohit Sharma,Nitin Menon,KN Ananthapadmanabhan,32000,league
+2,2025-03-23,M. Chinnaswamy Stadium,Bangalore,Royal Challengers Bangalore,Kolkata Knight Riders,Kolkata Knight Riders,field,Royal Challengers Bangalore,wickets,6,Virat Kohli,Chris Gaffaney,Nitin Menon,38000,league
+3,2025-03-24,Arun Jaitley Stadium,Delhi,Delhi Capitals,Punjab Kings,Delhi Capitals,bat,Punjab Kings,runs,12,Shikhar Dhawan,Paul Reiffel,KN Ananthapadmanabhan,28000,league
+4,2025-03-25,Rajiv Gandhi International Stadium,Hyderabad,Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,runs,34,Travis Head,Nitin Menon,Chris Gaffaney,35000,league
+5,2025-03-26,Eden Gardens,Kolkata,Kolkata Knight Riders,Gujarat Titans,Gujarat Titans,field,Kolkata Knight Riders,wickets,4,Sunil Narine,Paul Reiffel,KN Ananthapadmanabhan,65000,league
+6,2025-03-27,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Lucknow Super Giants,Chennai Super Kings,bat,Chennai Super Kings,runs,45,Ravindra Jadeja,Nitin Menon,Chris Gaffaney,40000,league
+7,2025-03-28,Wankhede Stadium,Mumbai,Mumbai Indians,Delhi Capitals,Delhi Capitals,field,Mumbai Indians,runs,18,Jasprit Bumrah,Paul Reiffel,KN Ananthapadmanabhan,32000,league
+8,2025-03-29,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Royal Challengers Bangalore,Rajasthan Royals,bat,Rajasthan Royals,wickets,7,Yashasvi Jaiswal,Nitin Menon,Chris Gaffaney,30000,league
+9,2025-03-30,Punjab Cricket Association Stadium,Mohali,Punjab Kings,Sunrisers Hyderabad,Punjab Kings,field,Sunrisers Hyderabad,runs,22,Heinrich Klaasen,Paul Reiffel,KN Ananthapadmanabhan,26000,league
+10,2025-03-31,Narendra Modi Stadium,Ahmedabad,Gujarat Titans,Mumbai Indians,Mumbai Indians,bat,Gujarat Titans,wickets,3,Rashid Khan,Nitin Menon,Chris Gaffaney,110000,league
+11,2025-04-01,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Lucknow Super Giants,Kolkata Knight Riders,Lucknow Super Giants,bat,Lucknow Super Giants,runs,8,Nicholas Pooran,Paul Reiffel,KN Ananthapadmanabhan,48000,league
+12,2025-04-02,M. Chinnaswamy Stadium,Bangalore,Royal Challengers Bangalore,Chennai Super Kings,Chennai Super Kings,field,Chennai Super Kings,runs,15,MS Dhoni,Nitin Menon,Chris Gaffaney,38000,league
+13,2025-04-03,Rajiv Gandhi International Stadium,Hyderabad,Sunrisers Hyderabad,Delhi Capitals,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,wickets,5,Pat Cummins,Paul Reiffel,KN Ananthapadmanabhan,35000,league
+14,2025-04-04,Eden Gardens,Kolkata,Kolkata Knight Riders,Punjab Kings,Kolkata Knight Riders,field,Kolkata Knight Riders,runs,28,Andre Russell,Nitin Menon,Chris Gaffaney,65000,league
+15,2025-04-05,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,wickets,2,Shubman Gill,Paul Reiffel,KN Ananthapadmanabhan,30000,league
+16,2025-04-06,Wankhede Stadium,Mumbai,Mumbai Indians,Royal Challengers Bangalore,Mumbai Indians,bat,Mumbai Indians,runs,32,Suryakumar Yadav,Nitin Menon,Chris Gaffaney,32000,league
+17,2025-04-07,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,field,Chennai Super Kings,runs,9,Ruturaj Gaikwad,Paul Reiffel,KN Ananthapadmanabhan,40000,league
+18,2025-04-08,Arun Jaitley Stadium,Delhi,Delhi Capitals,Lucknow Super Giants,Delhi Capitals,bat,Delhi Capitals,wickets,8,Axar Patel,Nitin Menon,Chris Gaffaney,28000,league
+19,2025-04-09,Punjab Cricket Association Stadium,Mohali,Punjab Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,Punjab Kings,runs,5,Liam Livingstone,Paul Reiffel,KN Ananthapadmanabhan,26000,league
+20,2025-04-10,Rajiv Gandhi International Stadium,Hyderabad,Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,bat,Sunrisers Hyderabad,wickets,4,Abhishek Sharma,Nitin Menon,Chris Gaffaney,35000,league
+21,2025-04-11,Narendra Modi Stadium,Ahmedabad,Gujarat Titans,Chennai Super Kings,Chennai Super Kings,field,Gujarat Titans,runs,17,David Miller,Paul Reiffel,KN Ananthapadmanabhan,110000,league
+22,2025-04-12,M. Chinnaswamy Stadium,Bangalore,Royal Challengers Bangalore,Delhi Capitals,Royal Challengers Bangalore,bat,Royal Challengers Bangalore,wickets,9,Faf du Plessis,Nitin Menon,Chris Gaffaney,38000,league
+23,2025-04-13,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Lucknow Super Giants,Rajasthan Royals,Rajasthan Royals,field,Rajasthan Royals,runs,21,Jos Buttler,Paul Reiffel,KN Ananthapadmanabhan,48000,league
+24,2025-04-14,Eden Gardens,Kolkata,Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,bat,Kolkata Knight Riders,runs,14,Philip Salt,Nitin Menon,Chris Gaffaney,65000,league
+25,2025-04-15,Wankhede Stadium,Mumbai,Mumbai Indians,Punjab Kings,Mumbai Indians,field,Mumbai Indians,wickets,6,Hardik Pandya,Paul Reiffel,KN Ananthapadmanabhan,32000,league
+26,2025-04-16,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Gujarat Titans,Chennai Super Kings,bat,Chennai Super Kings,runs,28,Shivam Dube,Nitin Menon,Chris Gaffaney,40000,league
+27,2025-04-17,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Delhi Capitals,Rajasthan Royals,field,Delhi Capitals,wickets,3,Rishabh Pant,Paul Reiffel,KN Ananthapadmanabhan,30000,league
+28,2025-04-18,Punjab Cricket Association Stadium,Mohali,Punjab Kings,Royal Challengers Bangalore,Punjab Kings,bat,Royal Challengers Bangalore,runs,11,Glenn Maxwell,Nitin Menon,Chris Gaffaney,26000,league
+29,2025-04-19,Rajiv Gandhi International Stadium,Hyderabad,Sunrisers Hyderabad,Lucknow Super Giants,Lucknow Super Giants,field,Sunrisers Hyderabad,wickets,7,Nitish Kumar Reddy,Paul Reiffel,KN Ananthapadmanabhan,35000,league
+30,2025-04-20,Narendra Modi Stadium,Ahmedabad,Gujarat Titans,Kolkata Knight Riders,Gujarat Titans,bat,Gujarat Titans,runs,19,Mohammed Shami,Nitin Menon,Chris Gaffaney,110000,league
+31,2025-04-21,Arun Jaitley Stadium,Delhi,Delhi Capitals,Mumbai Indians,Mumbai Indians,field,Mumbai Indians,runs,23,Ishan Kishan,Paul Reiffel,KN Ananthapadmanabhan,28000,league
+32,2025-04-22,M. Chinnaswamy Stadium,Bangalore,Royal Challengers Bangalore,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,wickets,5,Trent Boult,Nitin Menon,Chris Gaffaney,38000,league
+33,2025-04-23,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Punjab Kings,Chennai Super Kings,field,Chennai Super Kings,runs,36,Deepak Chahar,Paul Reiffel,KN Ananthapadmanabhan,40000,league
+34,2025-04-24,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Lucknow Super Giants,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,runs,7,Travis Head,Nitin Menon,Chris Gaffaney,48000,league
+35,2025-04-25,Eden Gardens,Kolkata,Kolkata Knight Riders,Delhi Capitals,Kolkata Knight Riders,field,Kolkata Knight Riders,wickets,8,Varun Chakaravarthy,Paul Reiffel,KN Ananthapadmanabhan,65000,league
+36,2025-04-26,Wankhede Stadium,Mumbai,Mumbai Indians,Gujarat Titans,Gujarat Titans,bat,Mumbai Indians,runs,4,Tilak Varma,Nitin Menon,Chris Gaffaney,32000,league
+37,2025-04-27,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Lucknow Super Giants,Rajasthan Royals,bat,Rajasthan Royals,wickets,7,Sanju Samson,Paul Reiffel,KN Ananthapadmanabhan,30000,league
+38,2025-04-28,Punjab Cricket Association Stadium,Mohali,Punjab Kings,Chennai Super Kings,Chennai Super Kings,field,Punjab Kings,runs,16,Sam Curran,Nitin Menon,Chris Gaffaney,26000,league
+39,2025-04-29,Rajiv Gandhi International Stadium,Hyderabad,Sunrisers Hyderabad,Royal Challengers Bangalore,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,runs,29,Pat Cummins,Paul Reiffel,KN Ananthapadmanabhan,35000,league
+40,2025-04-30,Arun Jaitley Stadium,Delhi,Delhi Capitals,Kolkata Knight Riders,Kolkata Knight Riders,field,Delhi Capitals,wickets,4,Kuldeep Yadav,Nitin Menon,Chris Gaffaney,28000,league
+41,2025-05-01,Narendra Modi Stadium,Ahmedabad,Gujarat Titans,Rajasthan Royals,Rajasthan Royals,bat,Gujarat Titans,runs,13,Rashid Khan,Paul Reiffel,KN Ananthapadmanabhan,110000,league
+42,2025-05-02,M. Chinnaswamy Stadium,Bangalore,Royal Challengers Bangalore,Mumbai Indians,Royal Challengers Bangalore,field,Mumbai Indians,wickets,5,Rohit Sharma,Nitin Menon,Chris Gaffaney,38000,league
+43,2025-05-03,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Chennai Super Kings,runs,8,MS Dhoni,Paul Reiffel,KN Ananthapadmanabhan,40000,league
+44,2025-05-04,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Lucknow Super Giants,Punjab Kings,Lucknow Super Giants,field,Lucknow Super Giants,wickets,6,KL Rahul,Nitin Menon,Chris Gaffaney,48000,league
+45,2025-05-05,Eden Gardens,Kolkata,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,bat,Kolkata Knight Riders,runs,11,Shreyas Iyer,Paul Reiffel,KN Ananthapadmanabhan,65000,league
+46,2025-05-06,Wankhede Stadium,Mumbai,Mumbai Indians,Rajasthan Royals,Mumbai Indians,bat,Rajasthan Royals,wickets,3,Yuzvendra Chahal,Nitin Menon,Chris Gaffaney,32000,league
+47,2025-05-07,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,field,Rajasthan Royals,runs,19,Yashasvi Jaiswal,Paul Reiffel,KN Ananthapadmanabhan,30000,league
+48,2025-05-08,Punjab Cricket Association Stadium,Mohali,Punjab Kings,Gujarat Titans,Gujarat Titans,bat,Gujarat Titans,wickets,7,Shubman Gill,Nitin Menon,Chris Gaffaney,26000,league
+49,2025-05-09,Rajiv Gandhi International Stadium,Hyderabad,Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,field,Sunrisers Hyderabad,runs,26,Heinrich Klaasen,Paul Reiffel,KN Ananthapadmanabhan,35000,league
+50,2025-05-10,Arun Jaitley Stadium,Delhi,Delhi Capitals,Royal Challengers Bangalore,Delhi Capitals,bat,Royal Challengers Bangalore,wickets,4,Virat Kohli,Nitin Menon,Chris Gaffaney,28000,league
+51,2025-05-11,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Lucknow Super Giants,Mumbai Indians,Mumbai Indians,field,Lucknow Super Giants,runs,14,Nicholas Pooran,Paul Reiffel,KN Ananthapadmanabhan,48000,league
+52,2025-05-12,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Delhi Capitals,Chennai Super Kings,bat,Chennai Super Kings,wickets,9,Ravindra Jadeja,Nitin Menon,Chris Gaffaney,40000,league
+53,2025-05-13,Narendra Modi Stadium,Ahmedabad,Gujarat Titans,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Gujarat Titans,runs,6,David Miller,Paul Reiffel,KN Ananthapadmanabhan,110000,league
+54,2025-05-14,M. Chinnaswamy Stadium,Bangalore,Royal Challengers Bangalore,Punjab Kings,Royal Challengers Bangalore,bat,Royal Challengers Bangalore,runs,21,Faf du Plessis,Nitin Menon,Chris Gaffaney,38000,league
+55,2025-05-15,Eden Gardens,Kolkata,Kolkata Knight Riders,Lucknow Super Giants,Kolkata Knight Riders,field,Kolkata Knight Riders,wickets,5,Andre Russell,Paul Reiffel,KN Ananthapadmanabhan,65000,league
+56,2025-05-16,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Mumbai Indians,Rajasthan Royals,bat,Mumbai Indians,runs,10,Jasprit Bumrah,Nitin Menon,Chris Gaffaney,30000,league
+57,2025-05-17,Wankhede Stadium,Mumbai,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,field,Chennai Super Kings,wickets,6,MS Dhoni,Paul Reiffel,KN Ananthapadmanabhan,32000,league
+58,2025-05-18,Punjab Cricket Association Stadium,Mohali,Punjab Kings,Delhi Capitals,Punjab Kings,bat,Delhi Capitals,runs,18,Rishabh Pant,Nitin Menon,Chris Gaffaney,26000,league
+59,2025-05-19,Rajiv Gandhi International Stadium,Hyderabad,Sunrisers Hyderabad,Gujarat Titans,Gujarat Titans,field,Sunrisers Hyderabad,wickets,8,Abhishek Sharma,Paul Reiffel,KN Ananthapadmanabhan,35000,league
+60,2025-05-20,Arun Jaitley Stadium,Delhi,Delhi Capitals,Rajasthan Royals,Rajasthan Royals,bat,Rajasthan Royals,runs,15,Jos Buttler,Nitin Menon,Chris Gaffaney,28000,league
+61,2025-05-21,M. Chinnaswamy Stadium,Bangalore,Royal Challengers Bangalore,Lucknow Super Giants,Lucknow Super Giants,field,Royal Challengers Bangalore,wickets,7,Glenn Maxwell,Paul Reiffel,KN Ananthapadmanabhan,38000,league
+62,2025-05-22,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,bat,Chennai Super Kings,runs,20,Ruturaj Gaikwad,Nitin Menon,Chris Gaffaney,40000,league
+63,2025-05-23,Narendra Modi Stadium,Ahmedabad,Gujarat Titans,Punjab Kings,Gujarat Titans,field,Gujarat Titans,wickets,4,Mohammed Shami,Paul Reiffel,KN Ananthapadmanabhan,110000,league
+64,2025-05-24,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,Lucknow,Lucknow Super Giants,Delhi Capitals,Delhi Capitals,bat,Lucknow Super Giants,runs,12,KL Rahul,Nitin Menon,Chris Gaffaney,48000,league
+65,2025-05-25,Eden Gardens,Kolkata,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,Kolkata Knight Riders,wickets,6,Sunil Narine,Paul Reiffel,KN Ananthapadmanabhan,65000,league
+66,2025-05-26,Sawai Mansingh Stadium,Jaipur,Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,bat,Rajasthan Royals,runs,9,Sanju Samson,Nitin Menon,Chris Gaffaney,30000,league
+67,2025-05-27,Punjab Cricket Association Stadium,Mohali,Punjab Kings,Lucknow Super Giants,Lucknow Super Giants,field,Punjab Kings,wickets,5,Liam Livingstone,Paul Reiffel,KN Ananthapadmanabhan,26000,league
+68,2025-05-28,Rajiv Gandhi International Stadium,Hyderabad,Sunrisers Hyderabad,Chennai Super Kings,Sunrisers Hyderabad,bat,Sunrisers Hyderabad,runs,17,Travis Head,Nitin Menon,Chris Gaffaney,35000,league
+69,2025-05-29,Wankhede Stadium,Mumbai,Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,field,Mumbai Indians,wickets,3,Hardik Pandya,Paul Reiffel,KN Ananthapadmanabhan,32000,league
+70,2025-05-30,Arun Jaitley Stadium,Delhi,Delhi Capitals,Gujarat Titans,Gujarat Titans,bat,Delhi Capitals,runs,7,Axar Patel,Nitin Menon,Chris Gaffaney,28000,league
+71,2025-06-01,Eden Gardens,Kolkata,Kolkata Knight Riders,Rajasthan Royals,Rajasthan Royals,field,Kolkata Knight Riders,runs,24,Philip Salt,Paul Reiffel,KN Ananthapadmanabhan,65000,qualifier1
+72,2025-06-02,MA Chidambaram Stadium,Chennai,Chennai Super Kings,Mumbai Indians,Chennai Super Kings,bat,Mumbai Indians,wickets,6,Rohit Sharma,Nitin Menon,Chris Gaffaney,40000,eliminator
+73,2025-06-03,Narendra Modi Stadium,Ahmedabad,Rajasthan Royals,Sunrisers Hyderabad,Sunrisers Hyderabad,field,Rajasthan Royals,runs,18,Yashasvi Jaiswal,Paul Reiffel,KN Ananthapadmanabhan,110000,qualifier2
+74,2025-06-05,Narendra Modi Stadium,Ahmedabad,Kolkata Knight Riders,Rajasthan Royals,Kolkata Knight Riders,bat,Kolkata Knight Riders,wickets,7,Andre Russell,Nitin Menon,Chris Gaffaney,132000,final

@@ -130,6 +130,18 @@ class IPLETLPipeline:
                 )
             ''')
             
+            # Create venues table
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS venues (
+                    id INTEGER PRIMARY KEY,
+                    name TEXT,
+                    city TEXT,
+                    capacity INTEGER,
+                    timezone TEXT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            ''')
+            
             self.conn.commit()
             logger.info("All tables created successfully")
             return True
@@ -194,6 +206,20 @@ class IPLETLPipeline:
             logger.error(f"Error inserting players data: {e}")
             return False
     
+    def insert_venues_data(self, df):
+        """Insert venues data into database"""
+        if df is None or df.empty:
+            logger.warning("No venues data to insert")
+            return False
+        
+        try:
+            df.to_sql('venues', self.conn, if_exists='replace', index=False)
+            logger.info(f"Inserted {len(df)} venues records")
+            return True
+        except Exception as e:
+            logger.error(f"Error inserting venues data: {e}")
+            return False
+    
     def insert_points_table_data(self, df):
         """Insert points table data into database"""
         if df is None or df.empty:
@@ -222,10 +248,11 @@ class IPLETLPipeline:
         
         # Load and insert data
         files_to_process = [
-            ('matches.csv', self.insert_matches_data),
-            ('deliveries.csv', self.insert_deliveries_data),
-            ('players.csv', self.insert_players_data),
-            ('points_table.csv', self.insert_points_table_data)
+            ('ipl_2025_matches.csv', self.insert_matches_data),
+            ('ipl_2025_ball_by_ball.csv', self.insert_deliveries_data),
+            ('ipl_2025_players.csv', self.insert_players_data),
+            ('ipl_2025_teams.csv', self.insert_points_table_data),
+            ('ipl_2025_venues.csv', self.insert_venues_data)
         ]
         
         success_count = 0
@@ -249,7 +276,7 @@ class IPLETLPipeline:
         
         try:
             summary = {}
-            tables = ['matches', 'deliveries', 'players', 'points_table']
+            tables = ['matches', 'deliveries', 'players', 'points_table', 'venues']
             
             for table in tables:
                 cursor = self.conn.cursor()

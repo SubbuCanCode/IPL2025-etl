@@ -106,10 +106,18 @@ class TestIPLETLPipeline:
             })
             
             # Save CSV files
-            sample_matches.to_csv(raw_dir / "matches.csv", index=False)
-            sample_deliveries.to_csv(raw_dir / "deliveries.csv", index=False)
-            sample_players.to_csv(raw_dir / "players.csv", index=False)
-            sample_points.to_csv(raw_dir / "points_table.csv", index=False)
+            sample_matches.to_csv(raw_dir / "ipl_2025_matches.csv", index=False)
+            sample_deliveries.to_csv(raw_dir / "ipl_2025_ball_by_ball.csv", index=False)
+            sample_players.to_csv(raw_dir / "ipl_2025_players.csv", index=False)
+            sample_points.to_csv(raw_dir / "ipl_2025_teams.csv", index=False)
+            sample_venues = pd.DataFrame([{
+                'id': [1, 2, 3],
+                'name': ['Wankhede Stadium', 'Eden Gardens', 'Chepauk Stadium'],
+                'city': ['Mumbai', 'Kolkata', 'Chennai'],
+                'capacity': [33000, 66000, 50000],
+                'timezone': ['Asia/Kolkata', 'Asia/Kolkata', 'Asia/Chennai']
+            }])
+            sample_venues.to_csv(raw_dir / "ipl_2025_venues.csv", index=False)
             
             yield str(data_dir)
     
@@ -294,10 +302,18 @@ class TestIPLKPIAnalyzer:
             })
             
             # Save CSV files
-            sample_matches.to_csv(raw_dir / "matches.csv", index=False)
-            sample_deliveries.to_csv(raw_dir / "deliveries.csv", index=False)
-            sample_players.to_csv(raw_dir / "players.csv", index=False)
-            sample_points.to_csv(raw_dir / "points_table.csv", index=False)
+            sample_matches.to_csv(raw_dir / "ipl_2025_matches.csv", index=False)
+            sample_deliveries.to_csv(raw_dir / "ipl_2025_ball_by_ball.csv", index=False)
+            sample_players.to_csv(raw_dir / "ipl_2025_players.csv", index=False)
+            sample_points.to_csv(raw_dir / "ipl_2025_teams.csv", index=False)
+            sample_venues = pd.DataFrame([{
+                'id': [1, 2, 3],
+                'name': ['Wankhede Stadium', 'Eden Gardens', 'Chepauk Stadium'],
+                'city': ['Mumbai', 'Kolkata', 'Chennai'],
+                'capacity': [33000, 66000, 50000],
+                'timezone': ['Asia/Kolkata', 'Asia/Kolkata', 'Asia/Chennai']
+            }])
+            sample_venues.to_csv(raw_dir / "ipl_2025_venues.csv", index=False)
             
             yield str(data_dir)
     
@@ -350,6 +366,14 @@ class TestIPLKPIAnalyzer:
         
         for col in required_columns:
             assert col in team_kpis.columns
+        
+        # Verify data insertion
+        summary = etl.get_data_summary()
+        assert summary['matches'] == 3
+        assert summary['deliveries'] == 6
+        assert summary['players'] == 4
+        assert summary['points_table'] == 3
+        assert summary['venues'] == 3
     
     def test_player_kpis_calculation(self, analyzer_setup):
         """Test player KPIs calculation"""
@@ -509,10 +533,18 @@ class TestIntegration:
             })
             
             # Save CSV files
-            sample_matches.to_csv(raw_dir / "matches.csv", index=False)
-            sample_deliveries.to_csv(raw_dir / "deliveries.csv", index=False)
-            sample_players.to_csv(raw_dir / "players.csv", index=False)
-            sample_points.to_csv(raw_dir / "points_table.csv", index=False)
+            sample_matches.to_csv(raw_dir / "ipl_2025_matches.csv", index=False)
+            sample_deliveries.to_csv(raw_dir / "ipl_2025_ball_by_ball.csv", index=False)
+            sample_players.to_csv(raw_dir / "ipl_2025_players.csv", index=False)
+            sample_points.to_csv(raw_dir / "ipl_2025_teams.csv", index=False)
+            sample_venues = pd.DataFrame([{
+                'id': [1, 2, 3],
+                'name': ['Wankhede Stadium', 'Eden Gardens', 'Chepauk Stadium'],
+                'city': ['Mumbai', 'Kolkata', 'Chennai'],
+                'capacity': [33000, 66000, 50000],
+                'timezone': ['Asia/Kolkata', 'Asia/Kolkata', 'Asia/Chennai']
+            }])
+            sample_venues.to_csv(raw_dir / "ipl_2025_venues.csv", index=False)
             
             yield str(data_dir)
     

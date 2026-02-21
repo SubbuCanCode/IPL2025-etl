@@ -1,0 +1,42 @@
+player_id,player_name,team,role,nationality,age,matches_played,innings_batted,runs_scored,balls_faced,batting_avg,strike_rate,hundreds,fifties,highest_score,fours,sixes,ducks,innings_bowled,overs_bowled,wickets,bowling_avg,economy,strike_rate_bowling,best_figures,maiden_overs,catches,stumpings,run_outs
+1,Rohit Sharma,Mumbai Indians,Batsman,India,37,16,16,612,398,43.71,153.77,2,3,94,58,32,0,0,0,0,0,0,0,0,0,8,0,1
+2,Virat Kohli,Royal Challengers Bangalore,Batsman,India,36,15,15,698,456,58.17,153.07,3,2,103,72,28,0,0,0,0,0,0,0,0,0,12,0,0
+3,MS Dhoni,Chennai Super Kings,Wicketkeeper,India,43,14,12,378,234,42.00,161.54,0,2,72,28,24,1,0,0,0,0,0,0,0,0,6,18,2
+4,Jasprit Bumrah,Mumbai Indians,Bowler,India,31,16,4,28,32,9.33,87.50,0,0,12,2,1,1,16,62.4,28,18.57,6.73,13.38,4/18,0,5,0,0
+5,Ravindra Jadeja,Chennai Super Kings,All-rounder,India,36,14,13,456,298,38.00,153.02,0,4,78,42,18,0,14,48.2,22,22.09,7.29,13.18,3/24,0,11,0,1
+6,Hardik Pandya,Mumbai Indians,All-rounder,India,31,16,15,524,312,40.31,167.95,0,4,89,42,35,0,16,52.0,19,26.84,8.12,16.42,3/28,0,7,0,0
+7,Suryakumar Yadav,Mumbai Indians,Batsman,India,34,16,16,587,348,39.13,168.68,1,3,102,54,38,0,0,0,0,0,0,0,0,0,9,0,0
+8,Rishabh Pant,Delhi Capitals,Wicketkeeper,India,27,14,14,542,324,42.46,167.28,1,3,95,48,32,0,0,0,0,0,0,0,0,0,8,12,3
+9,KL Rahul,Lucknow Super Giants,Wicketkeeper,India,32,15,15,634,428,45.29,148.13,2,3,98,62,24,0,0,0,0,0,0,0,0,0,10,8,1
+10,Shikhar Dhawan,Punjab Kings,Batsman,India,39,13,13,478,354,36.77,135.03,0,4,87,52,14,0,0,0,0,0,0,0,0,0,7,0,0
+11,Faf du Plessis,Royal Challengers Bangalore,Batsman,South Africa,40,15,15,589,398,42.07,147.99,1,4,96,64,22,0,0,0,0,0,0,0,0,0,11,0,1
+12,Yashasvi Jaiswal,Rajasthan Royals,Batsman,India,23,16,16,712,442,47.47,161.09,3,2,108,78,34,0,0,0,0,0,0,0,0,0,8,0,0
+13,Sanju Samson,Rajasthan Royals,Wicketkeeper,India,30,16,16,624,398,41.60,156.78,2,3,101,58,36,0,0,0,0,0,0,0,0,0,12,15,2
+14,Jos Buttler,Rajasthan Royals,Wicketkeeper,England,34,14,14,558,342,44.64,163.16,1,4,92,52,28,0,0,0,0,0,0,0,0,0,9,11,1
+15,Travis Head,Sunrisers Hyderabad,Batsman,Australia,31,15,15,678,398,48.43,170.35,2,4,104,64,42,0,0,0,0,0,0,0,0,0,7,0,0
+16,Heinrich Klaasen,Sunrisers Hyderabad,Wicketkeeper,South Africa,33,15,14,589,312,49.08,188.78,2,2,99,42,52,0,0,0,0,0,0,0,0,0,8,10,1
+17,Pat Cummins,Sunrisers Hyderabad,All-rounder,Australia,32,15,10,198,124,22.00,159.68,0,0,45,18,12,2,15,56.0,26,20.69,7.50,12.92,4/22,0,6,0,0
+18,Abhishek Sharma,Sunrisers Hyderabad,All-rounder,India,24,15,15,534,318,38.14,167.92,1,3,96,48,36,0,14,28.0,12,28.50,8.57,19.83,2/24,0,5,0,0
+19,Rashid Khan,Gujarat Titans,Bowler,Afghanistan,26,16,8,124,92,15.50,134.78,0,0,32,8,8,2,16,64.0,32,16.88,6.63,12.75,4/19,1,7,0,0
+20,Shubman Gill,Gujarat Titans,Batsman,India,25,16,16,668,456,44.53,146.49,2,3,102,72,24,0,0,0,0,0,0,0,0,0,13,0,1
+21,David Miller,Gujarat Titans,Batsman,South Africa,35,16,15,512,298,42.67,171.81,0,4,84,38,34,1,0,0,0,0,0,0,0,0,9,0,0
+22,Mohammed Shami,Gujarat Titans,Bowler,India,34,14,2,14,18,7.00,77.78,0,0,8,1,0,0,14,54.4,25,18.72,6.85,13.10,3/18,0,3,0,0
+23,Andre Russell,Kolkata Knight Riders,All-rounder,West Indies,37,15,14,468,258,39.00,181.40,0,3,86,32,46,1,15,42.0,21,22.14,9.14,13.71,3/22,0,6,0,0
+24,Sunil Narine,Kolkata Knight Riders,All-rounder,West Indies,36,15,15,512,298,36.57,171.81,0,3,78,42,38,0,15,58.0,24,20.17,6.90,12.92,4/21,2,8,0,0
+25,Philip Salt,Kolkata Knight Riders,Wicketkeeper,England,28,15,15,624,368,44.57,169.57,2,3,98,58,42,0,0,0,0,0,0,0,0,0,11,9,2
+26,Varun Chakaravarthy,Kolkata Knight Riders,Bowler,India,33,15,1,8,12,8.00,66.67,0,0,8,0,0,0,15,58.0,27,17.78,7.34,14.52,4/20,1,5,0,0
+27,Shreyas Iyer,Kolkata Knight Riders,Batsman,India,30,15,15,534,378,38.14,141.27,0,4,82,54,18,0,0,0,0,0,0,0,0,0,10,0,1
+28,Nicholas Pooran,Lucknow Super Giants,Wicketkeeper,West Indies,29,15,14,578,318,48.17,181.76,1,4,94,42,44,0,0,0,0,0,0,0,0,0,9,12,1
+29,Glenn Maxwell,Royal Challengers Bangalore,All-rounder,Australia,36,15,14,489,268,40.75,182.46,0,3,86,38,38,1,15,36.0,16,28.13,9.00,18.75,3/26,0,7,0,0
+30,Ruturaj Gaikwad,Chennai Super Kings,Batsman,India,28,14,14,556,398,42.77,139.70,1,3,94,62,18,0,0,0,0,0,0,0,0,0,9,0,0
+31,Shivam Dube,Chennai Super Kings,All-rounder,India,31,14,13,445,268,37.08,166.04,0,3,76,38,28,0,12,24.0,8,36.25,8.75,16.50,2/22,0,5,0,0
+32,Deepak Chahar,Chennai Super Kings,Bowler,India,32,12,4,32,28,10.67,114.29,0,0,18,3,1,1,12,44.0,19,20.63,8.18,15.16,3/20,0,4,0,0
+33,Axar Patel,Delhi Capitals,All-rounder,India,31,14,12,356,234,32.36,152.14,0,1,64,32,14,1,14,52.0,20,22.40,6.92,19.38,3/18,1,8,0,1
+34,Kuldeep Yadav,Delhi Capitals,Bowler,India,30,14,2,18,24,9.00,75.00,0,0,12,1,0,1,14,54.0,23,19.74,7.67,15.43,4/24,0,6,0,0
+35,Ishan Kishan,Mumbai Indians,Wicketkeeper,India,26,16,15,498,324,35.57,153.70,0,3,78,48,24,1,0,0,0,0,0,0,0,0,12,14,2
+36,Tilak Varma,Mumbai Indians,Batsman,India,22,16,16,556,354,37.07,157.06,0,4,82,52,24,0,0,0,0,0,0,0,0,0,8,0,0
+37,Liam Livingstone,Punjab Kings,All-rounder,England,31,13,12,412,234,37.45,176.07,0,2,72,32,32,1,13,38.0,14,26.14,9.05,17.29,2/20,0,6,0,0
+38,Sam Curran,Punjab Kings,All-rounder,England,26,13,11,298,198,29.80,150.51,0,1,58,28,14,0,13,46.0,18,23.11,8.26,16.78,3/24,0,5,0,0
+39,Yuzvendra Chahal,Rajasthan Royals,Bowler,India,34,16,1,6,8,6.00,75.00,0,0,6,0,0,0,16,62.0,29,17.59,7.81,13.52,4/23,0,8,0,0
+40,Trent Boult,Rajasthan Royals,Bowler,New Zealand,35,14,1,4,6,4.00,66.67,0,0,4,0,0,0,14,52.0,24,18.67,7.38,15.17,3/22,1,5,0,0
+41,Nitish Kumar Reddy,Sunrisers Hyderabad,All-rounder,India,21,15,12,334,218,30.36,153.21,0,1,62,32,16,1,14,32.0,11,29.09,8.44,20.64,2/26,0,4,0,0

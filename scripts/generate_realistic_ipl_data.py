@@ -199,8 +199,32 @@ class IPLDataGenerator:
         
         return deliveries
     
+    def generate_venues(self):
+        """Generate realistic venue data"""
+        venues = []
+        
+        for i, venue_name in enumerate(self.venues):
+            venue = {
+                'id': i + 1,
+                'name': venue_name,
+                'city': venue_name.split()[0],  # Extract city name
+                'capacity': random.randint(30000, 100000),  # Realistic stadium capacities
+                'timezone': 'Asia/Kolkata' if 'Kolkata' in venue_name else 
+                          'Asia/Mumbai' if 'Mumbai' in venue_name else
+                          'Asia/Chennai' if 'Chennai' in venue_name else
+                          'Asia/Delhi' if 'Delhi' in venue_name else
+                          'Asia/Bengaluru' if 'Bengaluru' in venue_name else
+                          'Asia/Hyderabad' if 'Hyderabad' in venue_name else
+                          'Asia/Jaipur' if 'Jaipur' in venue_name else
+                          'Asia/Ahmedabad' if 'Ahmedabad' in venue_name else
+                          'Asia/Lucknow' if 'Lucknow' in venue_name else
+                          'UTC+5:30'  # Default timezone
+            }
+            venues.append(venue)
+        
+        return venues
+    
     def generate_points_table(self):
-        """Generate realistic points table"""
         points_data = []
         
         for team in self.teams:
@@ -244,27 +268,33 @@ class IPLDataGenerator:
         
         print("🏏 Generating realistic IPL 2025 datasets...")
         
+        # Generate venues
+        venues = self.generate_venues()
+        venues_df = pd.DataFrame(venues)
+        venues_df.to_csv(output_path / "ipl_2025_venues.csv", index=False)
+        print(f"✅ Generated {len(venues)} venues")
+        
         # Generate matches
         matches = self.generate_matches(74)
         matches_df = pd.DataFrame(matches)
-        matches_df.to_csv(output_path / "matches.csv", index=False)
+        matches_df.to_csv(output_path / "ipl_2025_matches.csv", index=False)
         print(f"✅ Generated {len(matches)} matches")
         
         # Generate deliveries
         deliveries = self.generate_deliveries(matches)
         deliveries_df = pd.DataFrame(deliveries)
-        deliveries_df.to_csv(output_path / "deliveries.csv", index=False)
+        deliveries_df.to_csv(output_path / "ipl_2025_ball_by_ball.csv", index=False)
         print(f"✅ Generated {len(deliveries)} deliveries")
         
         # Generate players
         players_df = pd.DataFrame(self.player_pool)
-        players_df.to_csv(output_path / "players.csv", index=False)
+        players_df.to_csv(output_path / "ipl_2025_players.csv", index=False)
         print(f"✅ Generated {len(self.player_pool)} players")
         
         # Generate points table
         points = self.generate_points_table()
         points_df = pd.DataFrame(points)
-        points_df.to_csv(output_path / "points_table.csv", index=False)
+        points_df.to_csv(output_path / "ipl_2025_teams.csv", index=False)
         print(f"✅ Generated points table for {len(points)} teams")
         
         print(f"\n📊 All datasets saved to {output_path}")
@@ -273,6 +303,7 @@ class IPLDataGenerator:
         print(f"  Deliveries: {len(deliveries)}")
         print(f"  Players: {len(self.player_pool)}")
         print(f"  Teams: {len(points)}")
+        print(f"  Venues: {len(venues)}")
         
         return matches_df, deliveries_df, players_df, points_df
 
