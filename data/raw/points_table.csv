@@ -1,0 +1,11 @@
+id,season,team,matches_played,won,lost,tied,no_result,points,net_run_rate,for_overs,against_overs,position
+7,2025,Rajasthan Royals,14,11,1,2,0,24,-1.346,2915.3,2591.2,1
+6,2025,Sunrisers Hyderabad,14,12,0,0,2,24,2.45,3187.2,2428.6,2
+9,2025,Gujarat Titans,14,11,3,1,-1,23,-1.925,2739.9,2935.5,3
+10,2025,Lucknow Super Giants,14,10,2,2,0,22,-0.595,2974.7,2602.5,4
+5,2025,Delhi Capitals,14,9,3,1,1,19,2.496,2666.4,2475.7,5
+2,2025,Chennai Super Kings,14,8,6,0,0,16,-1.381,2851.9,2746.3,6
+8,2025,Punjab Kings,14,7,5,0,2,14,0.835,3170.0,2762.7,7
+3,2025,Kolkata Knight Riders,14,6,7,1,0,13,-0.615,2999.4,3044.1,8
+1,2025,Mumbai Indians,14,6,6,1,1,13,-0.435,2647.7,2994.5,9
+4,2025,Royal Challengers Bangalore,14,3,9,2,0,8,-0.78,2524.8,3011.1,10
