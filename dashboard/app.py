@@ -317,23 +317,27 @@ def main():
             )
             
             # Player details
-            player_stats = st.session_state.player_kpis.loc[selected_player]
-            
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                st.metric("🏏 Runs Scored", int(player_stats['runs_scored']))
-                st.metric("🎯 Batting Avg", f"{player_stats['batting_average']:.2f}")
-                st.metric("⚡ Strike Rate", f"{player_stats['strike_rate']:.2f}")
-            
-            with col2:
-                st.metric("⚾ Wickets", int(player_stats['wickets_taken']))
-                st.metric("🎯 Bowling Avg", f"{player_stats['bowling_average']:.2f}" if player_stats['bowling_average'] != float('inf') else "N/A")
-                st.metric("📊 Economy", f"{player_stats['economy_rate']:.2f}")
-            
-            with col3:
-                st.metric("🎯 Dismissals", int(player_stats['dismissals']))
-                st.metric("🤚 Catches", int(player_stats['dismissals']) if 'catches' in player_stats else 0)
-                st.metric("🧤 Stumpings", int(player_stats['dismissals']) if 'stumpings' in player_stats else 0)
+            if selected_player in st.session_state.player_kpis.index:
+                player_stats = st.session_state.player_kpis.loc[selected_player]
+                
+                col1, col2, col3 = st.columns(3)
+                
+                with col1:
+                    st.metric("🏏 Runs Scored", int(player_stats['runs_scored']))
+                    st.metric("🎯 Batting Avg", f"{player_stats['batting_average']:.2f}")
+                    st.metric("⚡ Strike Rate", f"{player_stats['strike_rate']:.2f}")
+                
+                with col2:
+                    st.metric("⚾ Wickets", int(player_stats['wickets_taken']))
+                    st.metric("🎯 Bowling Avg", f"{player_stats['bowling_average']:.2f}" if player_stats['bowling_average'] != float('inf') else "N/A")
+                    st.metric("📊 Economy", f"{player_stats['economy_rate']:.2f}")
+                
+                with col3:
+                    st.metric("🎯 Dismissals", int(player_stats['dismissals']))
+                    st.metric("🤚 Catches", int(player_stats['dismissals']) if 'catches' in player_stats else 0)
+                    st.metric("🧤 Stumpings", int(player_stats['dismissals']) if 'stumpings' in player_stats else 0)
+            else:
+                st.error(f"Player '{selected_player}' not found in the dataset")
     
     elif page == "🔮 Match Prediction":
         st.markdown("## 🔮 Match Winner Prediction")
