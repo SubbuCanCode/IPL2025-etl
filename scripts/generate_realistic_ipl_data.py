@@ -297,6 +297,12 @@ class IPLDataGenerator:
         points_df.to_csv(output_path / "ipl_2025_teams.csv", index=False)
         print(f"✅ Generated points table for {len(points)} teams")
         
+        # Generate venues
+        venues = self.generate_venues()
+        venues_df = pd.DataFrame(venues)
+        venues_df.to_csv(output_path / "ipl_2025_venues.csv", index=False)
+        print(f"✅ Generated {len(venues)} venues")
+        
         print(f"\n📊 All datasets saved to {output_path}")
         print("\n📈 Dataset Summary:")
         print(f"  Matches: {len(matches)}")
@@ -305,12 +311,12 @@ class IPLDataGenerator:
         print(f"  Teams: {len(points)}")
         print(f"  Venues: {len(venues)}")
         
-        return matches_df, deliveries_df, players_df, points_df
+        return matches_df, deliveries_df, players_df, points_df, venues_df
 
 def main():
     """Main function to generate IPL datasets"""
     generator = IPLDataGenerator()
-    matches_df, deliveries_df, players_df, points_df = generator.save_datasets()
+    matches_df, deliveries_df, players_df, points_df, venues_df = generator.save_datasets()
     
     print("\n🎯 Sample Data Preview:")
     print("\nMatches Sample:")
